@@ -12,7 +12,7 @@ namespace WebServicesCorreios.Console
         {
             System.Console.Write("Digite o CEP: ");
             var valor = System.Console.ReadLine();
-            Teste(null);
+            Teste(valor);
             try
             {
                 if(valor.Equals("34006053"))
@@ -104,11 +104,12 @@ namespace WebServicesCorreios.Console
             //System.Console.ReadLine();
         }
 
-        public static bool Teste(string testeBool)
+        public static int Teste(string testeBool)
         {
+            int retorno = 10;
             if (testeBool.Equals("34006053"))
-                return true;
-            return false;
+                return retorno =+ 5;
+            return retorno = +7;
         }
 
     }
