@@ -14,6 +14,11 @@ namespace WebServicesCorreios.Console
             var valor = System.Console.ReadLine();
             try
             {
+                string str = valor.ToString();
+                foreach (var c in str.ToCharArray()) // Noncompliant
+                {
+                    System.Console.Write(c);
+                }
                 var ws = new WSCorreios.AtendeClienteClient();
                 var resposta = ws.consultaCEP(valor);
                 System.Console.WriteLine();
