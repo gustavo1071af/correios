@@ -12,14 +12,15 @@ namespace WebServicesCorreios.Console
         {
             System.Console.Write("Digite o CEP: ");
             var valor = System.Console.ReadLine();
+            Teste(null);
             try
             {
-                string str = valor.ToString();
-                foreach (var c in str.ToCharArray()) // Noncompliant
+                if(valor.Equals("34006053"))
                 {
-                    System.Console.Write(c);
+                    System.Console.Write(valor);
                 }
                 var ws = new WSCorreios.AtendeClienteClient();
+                
                 var resposta = ws.consultaCEP(valor);
                 System.Console.WriteLine();
                 System.Console.WriteLine("Endereço: {0}", resposta.end);
@@ -102,5 +103,13 @@ namespace WebServicesCorreios.Console
             //}
             //System.Console.ReadLine();
         }
+
+        public static bool Teste(string testeBool)
+        {
+            if (testeBool.Equals("34006053"))
+                return true;
+            return false;
+        }
+
     }
 }
