@@ -1,0 +1,8 @@
+C:\workspace\correios\UnitTeste\bin\Debug\UnitTeste.dll
+C:\workspace\correios\UnitTeste\bin\Debug\UnitTeste.pdb
+C:\workspace\correios\UnitTeste\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\workspace\correios\UnitTeste\bin\Debug\WebServicesCorreios.Console.exe
+C:\workspace\correios\UnitTeste\bin\Debug\WebServicesCorreios.Console.pdb
+C:\workspace\correios\UnitTeste\obj\Debug\UnitTeste.csprojResolveAssemblyReference.cache
+C:\workspace\correios\UnitTeste\obj\Debug\UnitTeste.dll
+C:\workspace\correios\UnitTeste\obj\Debug\UnitTeste.pdb
