@@ -19,9 +19,7 @@ namespace WebServicesCorreios.Console
                 {
                     System.Console.Write(valor);
                 }
-                var ws = new WSCorreios.AtendeClienteClient();
-                
-                var resposta = ws.consultaCEP(valor);
+                var resposta = ClasseTrabalhadora.ConsultaCEP(valor);
                 System.Console.WriteLine();
                 System.Console.WriteLine("Endereço: {0}", resposta.end);
                 System.Console.WriteLine("Complemento: {0}", resposta.complemento);
@@ -104,10 +102,10 @@ namespace WebServicesCorreios.Console
             //System.Console.ReadLine();
         }
 
-        public static int Teste(string testeBool)
+        public static int Teste(string val)
         {
             int retorno = 10;
-            if (testeBool.Equals("34006053"))
+            if (val.Equals("34006053"))
                 return retorno =+ 5;
             return retorno = +7;
         }
